@@ -46,12 +46,6 @@
 [data-theme="loji"] .orb1 { background:#ff0000; }
 [data-theme="loji"] .orb2 { background:#880000; }
 [data-theme="loji"] .orb3 { background:#ff3300; }
-[data-theme="loji"] .theme-bg-overlay {
-  background-image: url('file:///C:/Users/Samed/Downloads/travel_planner_v4/travel_v4/loji_bg4.png');
-  background-size: cover;
-  background-position: center;
-  opacity: 0.18;
-}
 [data-theme="loji"] .search-box button { background: linear-gradient(135deg,#ff2222,#880000); }
 [data-theme="loji"] .saved-count { background:#ff2222; }
 [data-theme="loji"] h1 span { color:#ff2222; }
@@ -232,6 +226,7 @@ body {
   width:100%;
   height:28px;
   border-radius:6px;
+  display:block;
 }
 
 .default-prev { background:linear-gradient(135deg,#1e3c72,#f4a942); }
