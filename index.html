@@ -21,40 +21,40 @@
   <div class="theme-bg-overlay" id="themeBgOverlay"></div>
 
   
-  <button class="gear-btn" id="gearBtn" title="Settings">⚙</button>
+  <button class="gear-btn" id="gearBtn" title="Settings">&#9881;</button>
 
  
   <div class="settings-panel" id="settingsPanel">
     <div class="settings-header">
       <span>Settings</span>
-      <button class="settings-close" id="settingsClose">✕</button>
+      <button class="settings-close" id="settingsClose">&#10005;</button>
     </div>
 
     <div class="settings-section">
       <div class="settings-label">Theme</div>
       <div class="theme-grid">
         <button class="theme-btn active" data-theme="default">
-          <div class="theme-preview default-prev"></div>
+          <span class="theme-preview default-prev"></span>
           <span>Default</span>
         </button>
         <button class="theme-btn" data-theme="trollface">
-          <div class="theme-preview troll-prev"></div>
+          <span class="theme-preview troll-prev"></span>
           <span>El Teach</span>
         </button>
         <button class="theme-btn" data-theme="loji">
-          <div class="theme-preview loji-prev"></div>
+          <span class="theme-preview loji-prev"></span>
           <span>Loji / TFR</span>
         </button>
         <button class="theme-btn" data-theme="samed32">
-          <div class="theme-preview samed32-prev"></div>
+          <span class="theme-preview samed32-prev"></span>
           <span>samed32.exe</span>
         </button>
         <button class="theme-btn" data-theme="retro">
-          <div class="theme-preview retro-prev"></div>
+          <span class="theme-preview retro-prev"></span>
           <span>Retro DOS</span>
         </button>
         <button class="theme-btn" data-theme="luxury">
-          <div class="theme-preview luxury-prev"></div>
+          <span class="theme-preview luxury-prev"></span>
           <span>Luxury</span>
         </button>
       </div>
@@ -63,14 +63,14 @@
     <div class="settings-section">
       <div class="settings-label">Mode</div>
       <div class="mode-toggle">
-        <button class="mode-btn active" data-mode="light">☀️ Day</button>
-        <button class="mode-btn" data-mode="dark">🌙 Night</button>
+        <button class="mode-btn active" data-mode="light">&#9728;&#65039; Day</button>
+        <button class="mode-btn" data-mode="dark">&#127769; Night</button>
       </div>
     </div>
 
     <div class="settings-section">
       <div class="settings-label">Home City</div>
-      <input type="text" id="homeCityInput" class="settings-input" placeholder="e.g. Borås" />
+      <input type="text" id="homeCityInput" class="settings-input" placeholder="e.g. Boras" />
       <button class="settings-save-btn" id="saveHomeCity">Set</button>
       <div class="settings-note" id="homeCityNote"></div>
     </div>
@@ -79,18 +79,18 @@
   <div class="container">
 
     <header class="header">
-      <div class="logo" id="siteLogo">✈</div>
+      <div class="logo" id="siteLogo">&#9992;</div>
       <h1 id="siteTitle">Travel<span>Planner</span></h1>
       <p class="tagline" id="siteTagline">Explore the world, one city at a time</p>
     </header>
 
     <div class="search-wrapper">
       <div class="search-box">
-        <span class="search-icon">⌕</span>
+        <span class="search-icon">&#8981;</span>
         <input type="text" id="cityInput" placeholder="Search for a city..." autocomplete="off" />
         <button id="searchBtn">
           <span class="btn-text">Search</span>
-          <span class="btn-loader" style="display:none">●●●</span>
+          <span class="btn-loader" style="display:none">&#9679;&#9679;&#9679;</span>
         </button>
       </div>
       <div class="autocomplete-dropdown" id="autocompleteDropdown"></div>
@@ -100,10 +100,10 @@
 
       <div class="city-image-wrap">
         <div class="image-placeholder" id="imagePlaceholder">
-          <div class="placeholder-icon">🌍</div>
+          <div class="placeholder-icon">&#127757;</div>
           <p>Search for a city to begin</p>
         </div>
-        <img id="cityImage" src="" alt="City" style="display:none" />
+        <img id="cityImage" src="about:blank" alt="City" style="display:none" />
         <div class="image-overlay" id="imageOverlay" style="display:none">
           <div class="overlay-weather" id="overlayWeather"></div>
         </div>
@@ -120,62 +120,60 @@
             <p class="city-subtitle" id="citySubtitle"></p>
           </div>
           <button id="saveBtn" class="save-btn" title="Save destination">
-            <span id="saveIcon">☆</span>
+            <span id="saveIcon">&#9734;</span>
           </button>
         </div>
 
         <div class="weather-grid">
           <div class="weather-card">
-            <div class="weather-icon" id="weatherIcon">☀</div>
+            <div class="weather-icon" id="weatherIcon">&#9728;</div>
             <div class="weather-label">Condition</div>
             <div class="weather-value" id="weather">--</div>
           </div>
           <div class="weather-card">
-            <div class="weather-icon">🌡</div>
+            <div class="weather-icon">&#127777;</div>
             <div class="weather-label">Temperature</div>
-            <div class="weather-value"><span id="temp">--</span>°C</div>
+            <div class="weather-value"><span id="temp">--</span>&#176;C</div>
           </div>
           <div class="weather-card">
-            <div class="weather-icon">💨</div>
+            <div class="weather-icon">&#128168;</div>
             <div class="weather-label">Wind</div>
             <div class="weather-value"><span id="wind">--</span> km/h</div>
           </div>
           <div class="weather-card">
-            <div class="weather-icon">📍</div>
+            <div class="weather-icon">&#128205;</div>
             <div class="weather-label">Distance</div>
             <div class="weather-value" id="distance">-- km</div>
           </div>
           <div class="weather-card cost-card" id="costCard" style="display:none">
-            <div class="weather-icon">✈️</div>
+            <div class="weather-icon">&#9992;&#65039;</div>
             <div class="weather-label">Est. Flight</div>
             <div class="weather-value" id="flightCost">-- SEK</div>
           </div>
         </div>
 
-       
         <div class="bio-section" id="bioSection" style="display:none">
           <div class="bio-header">
-            <span class="bio-icon">📖</span>
+            <span class="bio-icon">&#128214;</span>
             <span>About <span id="bioCity"></span></span>
             <div class="bio-loading" id="bioLoading" style="display:none">
-              <span class="dot-anim">●●●</span>
+              <span class="dot-anim">&#9679;&#9679;&#9679;</span>
             </div>
           </div>
           <div class="bio-text" id="bioText"></div>
         </div>
 
-        
         <div class="similar-section" id="similarSection" style="display:none">
           <div class="similar-header">
-            <span>🌐 Popular destinations</span>
+            <span>&#127760; Popular destinations</span>
           </div>
           <div class="similar-grid" id="similarGrid"></div>
         </div>
 
         <div class="map-section">
-          <div class="map-label">📌 Location on map</div>
+          <div class="map-label">&#128205; Location on map</div>
           <div id="mapContainer" class="map-container">
-            <iframe id="mapFrame" src="" frameborder="0" style="border:0; width:100%; height:100%; border-radius:14px;" allowfullscreen loading="lazy"></iframe>
+            <iframe id="mapFrame" src="about:blank" style="border:0; width:100%; height:100%; border-radius:14px;" allowfullscreen></iframe>
           </div>
         </div>
 
@@ -185,12 +183,12 @@
 
     <div class="saved-section" id="savedSection">
       <div class="saved-header">
-        <h3>📌 Saved Destinations</h3>
+        <h3>&#128205; Saved Destinations</h3>
         <span class="saved-count" id="savedCount">0</span>
       </div>
       <div class="saved-grid" id="savedGrid">
         <div class="saved-empty">
-          <div style="font-size:2rem">🗺️</div>
+          <div style="font-size:2rem">&#128506;&#65039;</div>
           <p>No saved destinations yet</p>
         </div>
       </div>
